@@ -1,5 +1,5 @@
 #### connecting to pgcli
-pgcli -h localhost -p 5431 -u root -d ny_taxi
+pgcli -h localhost -p 5432 -u root -d ny_taxi
 
 ### postgress image 
     docker run -it \
@@ -53,7 +53,7 @@ docker build -t taxi_ingestion:v001 .
 
 
 docker run -it \
-    --network=nyc_taxi_project_default \
+    --network=docker_sql_default \
     taxi_ingestion:v001 \
         --user=root \
         --password=root \

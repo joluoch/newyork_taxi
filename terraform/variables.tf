@@ -4,6 +4,8 @@ locals {
 
 variable "project" {
   description = "Your GCP Project ID"
+  default = "fabled-decker-369409"
+  type = string
 }
 
 variable "region" {
@@ -12,7 +14,7 @@ variable "region" {
   type = string
 }
 variable "credentials" {
-  description = "../terraform/dynamic-concept-368705-8a903452fff7.json"
+  description = "credentials.json"
   default = "../terraform/fabled-decker-369409-a67b1064bb42.json"
   type = string
 }
