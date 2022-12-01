@@ -1,6 +1,6 @@
 #### connecting to pgcli
 pgcli -h localhost -p 5432 -u root -d ny_taxi
-
+pgcli -h localhost -U root -d ny_taxi
 ### postgress image 
     docker run -it \
      -e POSTGRES_USER="root" \
