@@ -4,7 +4,7 @@ locals {
 
 variable "project" {
   description = "Your GCP Project ID"
-  default = "fabled-decker-369409"
+  default = "freshthinker"
   type = string
 }
 
@@ -13,11 +13,7 @@ variable "region" {
   default = "europe-west6"
   type = string
 }
-variable "credentials" {
-  description = "credentials.json"
-  default = "../terraform/fabled-decker-369409-a67b1064bb42.json"
-  type = string
-}
+
 
 variable "storage_class" {
   description = "Storage class type for your bucket. Check official docs for more info."
