@@ -4,6 +4,7 @@ sources:
   - name: staging
     database: freshthinker
     schema: newyork
+    
     tables:
       - name: green_tripdata
       - name: yellow_tripdata
